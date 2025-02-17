@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="Content-Language" content="pt-br"/>
+    <meta name="robots" content="index, follow"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="X-Frame-Options" content="DENY"/>
+    <meta property="og:description" content=""/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+
+    <title>Document</title>
+
+       <!-- Bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+   <!-- CDN Icons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+   <!-- MDBootstrap CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css">
+
+   <link rel="canonical" href="https://mdbootstrap.com/snippets/" />
+   <!-- Font Awesome -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_forward" />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+    
+
+</head>
+<body>
+    <header class="header-menu w-100">
+      <nav class="navbar navbar-expand-lg d-lg-block">
+          <div class="container container-menu">
+              <picture>
+                  <img class="img-fluid rounded"
+                      src="images/logo.png"
+                      class="img-fluid"
+                      alt="image desc"/>
+              </picture>
+              <button class="navbar-toggler fs-3" id="menu-button" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i id="menu-icon" class="fas fa-bars"></i>
+                </button>
+                  <div class="div-menu menu collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav w-100 mt-2 mt-lg-0">
+                          <li class="nav-item">
+                              <a class="nav-link active text-black" href="#home" aria-current="page"
+                                  >Home
+                                  <span class="visually-hidden">(current)</span></a>
+                          </li>
+                          <div class="vr"></div>
+                          <li class="nav-item">
+                              <a class="nav-link active text-black" href="#especialidades" aria-current="page"
+                                  >Especialidades
+                                  <span class="visually-hidden">(current)</span></a>
+                          </li>
+                          <div class="vr"></div>
+                          <li class="nav-item">
+                              <a class="nav-link active text-black" href="#" aria-current="page"
+                                  >Quem somos
+                                  <span class="visually-hidden">(current)</span></a>
+                          </li>
+                          <div class="vr"></div>
+                          <li class="nav-item">
+                              <a id="whatsapp-button" class="nav-link active text-black" href="#" aria-current="page"
+                                  >Contato
+                                  <span class="visually-hidden">(current)</span></a>
+                          </li>
+                          <div class="vr"></div>
+                           <li class="nav-item">
+                              <a class="nav-link active text-black d-inline-flex px-2 btn text-decoration-none border border-light rounded-2" href="#" aria-current="page">
+                                Agendar Consulta
+                              <span class="visually-hidden">(current)</span></a>
+                          </li> 
+                      </div>
+                    </div>
+                  </nav>
+                </header>
+
+        <section class="section-home" id="home">
+          <figure class="figure-home"></figure>
+          <div class="container container-home">
+            <p class="w-25 justify-content-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ullam officiis optio! Possimus molestiae, corrupti ipsam blanditiis sit placeat officiis, sint eligendi ducimus suscipit, distinctio fuga at quas ut esse!</p>
+          </div>
+        </section>
+
+        <!-- <section class="section-espec" id="especialidades">
+          <div class="gallery">
+            <div class="gallery-container">
+              <img class="gallery-item gallery-item-1" src="images/img1-slide1.jpg" fetchpriority="high" data-index="1">
+              <img class="gallery-item gallery-item-2" src="images/img1-slide1.jpg" fetchpriority="high" data-index="2">
+              <img class="gallery-item gallery-item-3" src="images/img1-slide1.jpg" fetchpriority="high" data-index="3">
+              <img class="gallery-item gallery-item-4" src="images/img1-slide1.jpg" fetchpriority="high" data-index="4">
+              <img class="gallery-item gallery-item-5" src="images/img1-slide1.jpg" fetchpriority="high" data-index="5">
+            </div>
+            <div class="gallery-controls">
+              <button class="" id="prevBtn">◀</button>
+              <button class="" id="nextBtn">▶</button>
+            </div>
+
+          </div>
+        </section> -->
+
+
+        <!-- Carrossel -->
+        <section class="section-especialidades" id="especialidades">
+          <div class="swiper container" aria-live="polite">
+            <div class="title-div">
+                <h1 class="h1-menu">Escolha...</h1>
+            </div>
+            <div class="card-wrapper">
+                <ul class="card-list swiper-wrapper">
+
+                    <li class="card-item swiper-slide" aria-labelledby="slide 1">
+                        <a href="#agendamentos" class="card-link">
+                            <img src="images/img1-slide1.jpg" alt="Card image" class="card-image img-fluid">
+                            <h2 class="card-title">Odontologia</h2>
+                            <del>
+                                <p class="original-p">R$ 3.800</p>
+                            </del>
+                            <p class="promotional-p">R$ 2.500</p>
+                            <button type="button" class="card-button material-symbols-outlined">
+                                arrow_forward
+                            </button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide" aria-labelledby="slide 2">
+                        <a href="#agendamentos" class="card-link">
+                            <img src="images/pediatria" alt="Card image" class="card-image img-fluid">
+                            <h2 class="card-title">Pediatria</h2>
+                            <del>
+                                <p class="original-p">R$ 3.800</p>
+                            </del>
+                            <p class="promotional-p">R$ 2.500</p>
+                            <button type="button" class="card-button material-symbols-outlined">
+                                arrow_forward
+                            </button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide" aria-labelledby="slide 3">
+                        <a href="#agendamentos" class="card-link">
+                            <img src="images/psicologia" alt="Card image" class="card-image img-fluid">
+                            <h2 class="card-title">Psicologia</h2>
+                            <del>
+                                <p class="original-p">R$ 3.800</p>
+                            </del>
+                            <p class="promotional-p">R$ 2.500</p>
+                            <button type="button" class="card-button material-symbols-outlined">
+                                arrow_forward
+                            </button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide" aria-labelledby="slide 4">
+                        <a href="#agendamentos" class="card-link">
+                            <img src="images/neurocirurgia.avif" alt="Card image" class="card-image img-fluid">
+                            <h2 class="card-title">Neurocirurgia</h2>
+                            <del>
+                                <p class="original-p">R$ 3.800</p>
+                            </del>
+                            <p class="promotional-p">R$ 2.500</p>
+                            <button type="button" class="card-button material-symbols-outlined">
+                                arrow_forward
+                            </button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide" aria-labelledby="slide 5">
+                        <a href="#agendamentos" class="card-link">
+                            <img src="images/nutricionista.avif" alt="Card image" class="card-image">
+                            <h2 class="card-title">Nutricionista</h2>
+                            <del>
+                                <p class="original-p">R$ 3.800</p>
+                            </del>
+                            <p class="promotional-p">R$ 2.500</p>
+                            <button type="button" class="card-button material-symbols-outlined">
+                                arrow_forward
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiper-pagination"></div>
+                <div aria-label="Anterior" aria-hidden="true" class="swiper-slide-button swiper-button-prev">
+                </div>
+                <div aria-label="Próximo" aria-hidden="true" class="swiper-slide-button swiper-button-next">
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        <!-- Formulário -->
+          <div class="form-div-control pt-5 pb-5" aria-live="polite">
+            <fieldset class="">
+              <div>
+                <legend class="lh-sm justify-content-center text-center">Preencha as informações abaixo e retornaremos o mais breve possível.</legend>  
+              </div>
+              <form role="form" class="form-clinica">
+                  <input type="text" class="form-control" id="nome" name="nome" required aria-invalid="false" placeholder="Nome">
+
+                  <input type="tel" class="form-control" placeholder="Telefone" required aria-required="true"
+                  aria-invalid="true">
+              
+                  <input type="email" class="form-control" id="email" placeholder="E-mail" name="email" required aria-required="true" aria-invalid="true">
+                  <div>
+                      <label for="select">Como conheceu a clínica?</label>
+                      <select name="clinica" class="w-100 form-control" id="find-us" required aria-required="true" aria-label="Default select">
+                          <option disabled selected value="">Selecione uma opção
+                          </option>
+                          <option value="Google">Google</option>
+                          <option value="Instagram">Instagram</option>
+                          <option value="Facebook">Facebook</option>
+                          <option value="Outros">Outros</option>
+                      </select>
+                  </div>
+                  <textarea class="textarea-form w-100 form-control" id="mensagem" name="mensagem" placeholder="Mensagem" maxlength="700" aria-describedby="mensagemDescricao" required></textarea>
+                  <p id="mensagemDescricao" class="text-muted m-0">Máximo de 700 caracteres.</p>
+              
+                  <button tabindex="5" type="submit" class="w-50 justify-content-center m-auto d-flex btn btn-primary" aria-label="Clique para enviar o formulário">Enviar
+                  </button>
+              </form>
+          </fieldset>
+      </div>
+
+  
+      <!-- Footer -->
+      <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+        <section id="footer_social_media" class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <div class="m-auto d-flex flex-wrap">
+            <a class="me-4 text-reset fs-6 text-decoration-none" href="#"><i class="bi bi-facebook"></i></a>
+            <a class="me-4 text-reset fs-6 text-decoration-none" href="#"><i class="bi bi-twitter"></i></a>
+            <a class="me-4 text-reset fs-6 text-decoration-none" href="#"><i class="bi bi-google"></i></a>
+            <a class="me-4 text-reset fs-6 text-decoration-none" href="#"><i class="bi bi-instagram"></i></a>
+            <a class="me-4 text-reset fs-6 text-decoration-none" href="#"><i class="bi bi-linkedin"></i></a>
+            <a class="me-4 text-reset fs-6 text-decoration-none" href="#"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </section>
+      
+        <section id="bottom-footer" class="section-footer">
+          <div class="container text-center container-footer text-md-start">
+            <!-- Adicionando o container para centralizar a seção -->
+            <div class="row pt-5"> <!-- Usando justify-content-center para centralizar as colunas -->
+              <div class="col-sm-3 col-md-3 col-lg-2 col-xl-2 mx-auto mb-5">
+                <img src="images/marca-orthos-sl-sem-fundo.png" class="logo-footer" alt="logo-f">
+                <!-- <p class="w-75"> 
+                Nossa clínica oferece atendimento de qualidade com profissionais altamente capacitados. Estamos prontos para cuidar de sua saúde com o respeito e a dedicação que você merece.
+              </p> -->
+              </div>
+              <div class="col-sm-6 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-2">Especialidades</h6>
+                <ul class="list-unstyled lh-md">
+                  <li>Pediatria</li>
+                  <li>Clínica Geral</li>
+                  <li>Dermatologia</li>
+                  <li>Ginecologia e Obstetrícia</li>
+                  <li>Ortopedia</li>
+                  <li>Endocrinologia</li>
+                  <li>Oftalmologia</li>
+                  <li>Psiquiatria</li>
+                </ul>
+              </div>
+              <div class="col-sm-3 col-md-3 col-lg-2 col-xl-0 mx-auto mb-4 lh-sm">
+                <h6 class="text-uppercase fw-bold mb-2">Horário de funcionamento</h6>
+                <p>Segunda a Sexta: 8h às 18h</p>
+                <p>Sábado: 8h às 12h</p>
+              </div>
+              <div class="col-sm-8 col-md-2 col-lg-3 col-xl-4 mx-auto mb-md-0 mb-4 lh-sm">
+                <h6 class="text-uppercase fw-bold mb-2">Endereço</h6>
+                <address>
+                  <p class="">
+                    <i class="bi bi-geo-alt-fill"></i> Estrada da Cancela Preta, n° 324, Sala XX, Bangu, Rio de Janeiro -
+                    RJ. <br />
+                    CEP: 00000-000
+                  </p>
+                  <p><i class="bi bi-telephone-fill"></i> +55 (21) 99999-9999</p>
+                </address>
+                <p>
+                  <i class="bi bi-envelope-at-fill"></i> info@example.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="text-center p-4">
+          <p class="text-reset fw-bold">&copy; 2025, {Nome da clínica}</p>
+        </div>
+      </footer>
+  
+  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+      <!-- SwipperJS script -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <script src="js/clinica.js"></script>
+      <script src="js/footer.js"></script>
+</body>
+</html>
