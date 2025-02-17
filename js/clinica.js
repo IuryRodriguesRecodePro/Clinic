@@ -1,4 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
+
+    // WhatsApp
+    document.getElementById('whatsapp-button').addEventListener('click', function () {
+        const phone = '+5521991504497';
+        const message = 'Olá, gostaria de saber mais sobre consultas.';
+        const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+
+        window.open(url, '_blank');
+    });  
+
+
+
     const images = document.querySelectorAll('.gallery-item');
     let currentIndex = 2; // Começa na imagem do meio
 
@@ -41,13 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     
-    document.getElementById('whatsapp-button').addEventListener('click', function () {
-        const phone = '+5521980892914';
-        const message = 'Olá, gostaria de saber mais sobre consultas.';
-        const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-
-        window.open(url, '_blank');
-    });
+    
 });
 
 
